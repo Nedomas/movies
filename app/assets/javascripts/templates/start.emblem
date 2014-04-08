@@ -1,0 +1,6 @@
+h3 My name is Slim Shady
+
+p Whats your favorite movie?
+form{action 'search' on='submit'}
+  input type="text" value=title
+  button Search
