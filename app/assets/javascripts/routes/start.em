@@ -1,3 +1,4 @@
 class App.StartRoute extends Em.Route
   model: ->
-    @store.createRecord('movie')
+    @store.find('movie', 1)
+    # @store.createRecord('movie')
