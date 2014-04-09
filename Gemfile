@@ -5,7 +5,7 @@ source 'https://rubygems.org'
 gem 'rails', '4.0.4'
 
 # Use postgresql as the database for Active Record
-gem 'pg'
+gem 'sqlite3'
 
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 4.0.2'
@@ -25,6 +25,7 @@ gem 'puma'
 gem 'emblem-rails'
 gem 'ember_script-rails', github: 'ghempton/ember-script-rails'
 gem 'sprockets', '2.11.0'
+gem 'faraday'
 # See https://github.com/sstephenson/execjs#readme for more supported runtimes
 # gem 'therubyracer', platforms: :ruby
 
