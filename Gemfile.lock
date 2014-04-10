@@ -259,6 +259,7 @@ DEPENDENCIES
   database_cleaner
   devise
   doorkeeper
+  ember-rails
   ember_script-rails!
   emblem-rails
   faraday

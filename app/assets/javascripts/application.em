@@ -2,6 +2,8 @@
 #= require handlebars
 #= require ember
 #= require ember-data
+#= require flash-message
+#= require ember-simple-auth
 #= require_self
 #= require app
 

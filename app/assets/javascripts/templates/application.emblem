@@ -1,6 +1,10 @@
 header
   h1 Movies app
 
+flashMessage
+  section.flash
+    message
+
 main
   outlet
 
