@@ -1,3 +1,3 @@
 App.Router.map ->
   @resource 'start', path: '/'
-  @resource 'suggest', path: '/suggest/:movie_id'
+  @resource 'similar', path: '/similar/:movie_id'

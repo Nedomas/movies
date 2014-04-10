@@ -4,4 +4,4 @@ class App.StartController extends Em.Controller
       _this = this
 
       @store.find('movie', 1).then (movie) ->
-        _this.transitionToRoute('suggest', movie.get('id'))
+        _this.transitionToRoute('similar', movie.get('id'))

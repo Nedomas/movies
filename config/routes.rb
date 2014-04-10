@@ -4,7 +4,7 @@ Movies::Application.routes.draw do
   namespace :api do
     namespace :v1 do
       get 'movies/:id' => 'movies#show'
-      get 'similar/:id' => 'similar#show'
+      get 'similar' => 'similar#show'
     end
   end
 

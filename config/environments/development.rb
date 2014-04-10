@@ -29,29 +29,29 @@ Movies::Application.configure do
 
   MOVIES = [
     {
-      id: '1',
+      id: '12989',
       title: 'The Shawshank Redemption',
-      rotten_tomatoes_id: '12989'
+      similar: ['405587791']
     },
     {
-      id: '2',
+      id: '405587791',
       title: 'The Godfather',
-      rotten_tomatoes_id: '405587791'
+      similar: ['405587791']
     },
     {
-      id: '3',
+      id: '771041731',
       title: 'The Dark Knight',
-      rotten_tomatoes_id: '771041731'
+      similar: ['405587791']
     },
     {
-      id: '4',
+      id: '13863',
       title: 'Pulp Fiction',
-      rotten_tomatoes_id: '13863'
+      similar: ['405587791']
     },
     {
-      id: '5',
+      id: '745781820',
       title: 'Death Proof',
-      rotten_tomatoes_id: '745781820'
+      similar: ['405587791']
     }
   ]
 
