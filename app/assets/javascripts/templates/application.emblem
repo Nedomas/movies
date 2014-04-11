@@ -1,6 +1,11 @@
 header
   h1 Movies app
 
+  if session.isAuthenticated
+    a{action 'invalidateSession'} href='#' Logout
+  else
+    link-to 'login' | Sign in
+
 flashMessage
   section.flash
     message

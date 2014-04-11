@@ -1,0 +1,6 @@
+log 'yo'
+log model
+ul
+  each movie in model
+    li
+      movie.title
