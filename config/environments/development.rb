@@ -57,13 +57,13 @@ Movies::Application.configure do
 
   USERS = [
   {
-    id: 1,
+    id: '1',
     email: 'john.doe@mail.dk',
     password: '123456',
-    passwordConfirmation: '123456',
-    seen: [2, 4],
-    unseen: [1, 3, 5],
-    last: 2
+    passwordConfirmation: '123456'
+    # seen: ['2', 4],
+    # unseen: [1, 3, 5],
+    # last: 2
   }
 ]
 end

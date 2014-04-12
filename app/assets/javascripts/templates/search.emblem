@@ -4,8 +4,4 @@ p Whats your favorite movie?
 view Ember.TextField value=keyword
   button{action 'search' keyword}
     | Search
-keyword
 outlet
-/ form{action 'search' on='submit'}
-/   input type="text" value=title
-/   button Search

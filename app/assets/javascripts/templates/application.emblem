@@ -2,6 +2,7 @@ header
   h1 Movies app
 
   if session.isAuthenticated
+    p You are #{session.user.email}
     a{action 'invalidateSession'} href='#' Logout
   else
     link-to 'login' | Sign in

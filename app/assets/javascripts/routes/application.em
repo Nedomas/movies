@@ -5,10 +5,10 @@ class App.ApplicationRoute extends Ember.Route with Ember.SimpleAuth.Application
   actions:
     sessionAuthenticationSucceeded: ->
       @flashMessage('You have successfully signed in.')
-      @transitionTo('start')
+      @transitionTo('search')
     sessionAuthenticationFailed: ->
       @flashMessage('The password is invalid.').now()
     sessionInvalidationSucceeded: ->
       @flashMessage('You have successfully signed out.')
-      @transitionTo('start', 1)
+      @transitionTo('search')
 

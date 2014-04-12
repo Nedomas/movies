@@ -1,11 +1,16 @@
 Movies::Application.routes.draw do
   devise_for :users
+  use_doorkeeper do
+    # it accepts :authorizations, :tokens, :applications and :authorized_applications
+    controllers tokens: 'api/v1/tokens'
+  end
   use_doorkeeper
   root 'home#index'
 
   namespace :api do
     namespace :v1 do
       resources :movies
+      resources :users
       # get 'movies/:id' => 'movies#show'
       # get 'similar' => 'similar#show'
     end

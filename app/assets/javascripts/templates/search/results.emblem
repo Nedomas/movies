@@ -3,4 +3,5 @@ log model
 ul
   each movie in model
     li
-      movie.title
+      link-to 'similar' movie
+        movie.title
