@@ -1,3 +1,6 @@
 h3 Got it
 
 p You should check out #{title}
+
+button{action 'seen' this} Seen
+button{action 'skip' this} Skip
