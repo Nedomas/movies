@@ -30,28 +30,31 @@ Movies::Application.configure do
   MOVIES = [
     {
       id: '12989',
-      title: 'The Shawshank Redemption',
-      similar: ['405587791']
+      title: 'The Shawshank Redemption'
     },
     {
       id: '405587791',
-      title: 'The Godfather',
-      similar: ['405587791']
+      title: 'The Godfather'
     },
     {
       id: '771041731',
-      title: 'The Dark Knight',
-      similar: ['405587791']
+      title: 'The Dark Knight'
     },
     {
       id: '13863',
-      title: 'Pulp Fiction',
-      similar: ['405587791']
+      title: 'Pulp Fiction'
     },
     {
       id: '745781820',
-      title: 'Death Proof',
-      similar: ['405587791']
+      title: 'Death Proof'
+    },
+    {
+      id: '460859831',
+      title: 'Grindhouse'
+    },
+    {
+      id: '771206377',
+      title: 'Hobo With a Shotgun'
     }
   ]
 
@@ -60,10 +63,11 @@ Movies::Application.configure do
     id: '1',
     email: 'john.doe@mail.dk',
     password: '123456',
-    passwordConfirmation: '123456'
-    # seen: ['2', 4],
-    # unseen: [1, 3, 5],
-    # last: 2
+    passwordConfirmation: '123456',
+    suggested: '12989',
+    last: '745781820',
+    seen: ['13863', '745781820'],
+    skipped: ['405587791']
   }
 ]
 end

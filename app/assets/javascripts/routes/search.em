@@ -10,13 +10,14 @@ class App.SearchResultsRoute extends Em.Route with Ember.SimpleAuth.ApplicationR
       _this.store.filter 'movie', (record) ->
         record.get('title') == params.keyword
 
+  actions:
+    seen: (movie) ->
+      _this = this
 
-  setupController: (controller, model) ->
-    # @store.filter 'movie', (record) ->
-    #   record.get('title') == params.keyword
-    controller.set('model', model)
-    # _.range(0, 10).map (number) ->
-    #   Em.Object.create
-    #     name: params.keyword + number.toString()
-  # serialize: (keyword) ->
-  #   { keyword: keyword }
+      @get('session.user').then (user) ->
+        user.get('seen').addObject(movie)
+
+        transitionNext = (resp) ->
+          _this.transitionTo('suggest')
+
+        user.save().then(transitionNext)

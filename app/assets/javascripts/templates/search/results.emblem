@@ -1,7 +1,4 @@
-log 'yo'
-log model
 ul
   each movie in model
     li
-      link-to 'similar' movie
-        movie.title
+      a{action 'seen' movie} href='#' = movie.title
