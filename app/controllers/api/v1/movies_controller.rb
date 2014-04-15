@@ -3,6 +3,7 @@ class Api::V1::MoviesController < ApplicationController
 
   def index
     movie = find_movie_by_title(params[:title])
+    # return random movie when request is invalid
     movie = MOVIES.first unless movie
 
     render json: {
@@ -15,7 +16,6 @@ class Api::V1::MoviesController < ApplicationController
 
     render json: {
       movie: movie
-      # movies: similar(movie)
     }
   end
 
@@ -27,9 +27,5 @@ class Api::V1::MoviesController < ApplicationController
 
   def find_movie(id)
     MOVIES.find { |movie| movie[:id] == id }
-  end
-
-  def similar(movie)
-    MOVIES
   end
 end

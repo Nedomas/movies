@@ -1,0 +1,14 @@
+div.session
+  h1 Register
+
+  form{action 'register' on='submit'}
+    .email
+      =input id='identification' placeholder='awesome@email.com' value=email
+    .password
+      =input id='password' placeholder='password' type='password' value=password
+    .password-conformation
+      =input id='password-confirmation' placeholder='password confirmation' type='password' value=passwordConfirmation
+
+    .register
+      button Register
+

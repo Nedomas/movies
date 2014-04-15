@@ -6,6 +6,7 @@ header
     a{action 'invalidateSession'} href='#' Logout
   else
     link-to 'login' | Sign in
+    link-to 'register' | Register
 
 flashMessage
   section.flash
